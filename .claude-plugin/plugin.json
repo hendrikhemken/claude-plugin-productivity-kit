@@ -7,7 +7,6 @@
     "email": "hendrik@beyond7.ai",
     "url": "https://beyond7.ai"
   },
-  "hooks": "./hooks/hooks.json",
   "license": "MIT",
   "repository": "https://github.com/hendrikhemken/claude-plugin-productivity-kit",
   "keywords": ["okr", "productivity", "journal", "morning-routine", "weekly-review"]
