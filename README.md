@@ -20,6 +20,18 @@ Turn Claude Code into your daily business co-pilot. This plugin adds structured 
 
 ### 1. Install
 
+**Via Beyond7 Marketplace (empfohlen):**
+```
+/plugin marketplace add hendrikhemken/claude-marketplace
+/plugin install productivity-kit@beyond7-tools
+```
+
+**Direkt via GitHub:**
+```
+/plugin install hendrikhemken/claude-plugin-productivity-kit
+```
+
+**Via npx skills CLI (Alternative):**
 ```bash
 npx skills add hendrikhemken/claude-plugin-productivity-kit --agent "Claude Code" --copy --yes
 ```
