@@ -1,0 +1,41 @@
+{
+  "name": "productivity-kit",
+  "version": "1.0.0",
+  "description": "OKR tracking + daily routines for solo entrepreneurs and small teams. Weekly Monday/Friday check-ins, daily journal, morning routine with prioritization.",
+  "author": {
+    "name": "Hendrik Hemken",
+    "email": "hendrik@beyond7.ai",
+    "url": "https://beyond7.ai"
+  },
+  "skills": [
+    {
+      "name": "setup",
+      "description": "Interactive onboarding wizard - creates folder structure, templates, and configures hooks"
+    },
+    {
+      "name": "good-morning",
+      "description": "Daily morning routine: yesterday review (git, meetings, notes) + today planning (calendar, priorities)"
+    },
+    {
+      "name": "okr-monday",
+      "description": "Weekly Monday commitment check-in (15 min) - set weekly actions per Key Result"
+    },
+    {
+      "name": "okr-friday",
+      "description": "Weekly Friday celebration check-in (15 min) - celebrate wins, capture learnings"
+    },
+    {
+      "name": "journal",
+      "description": "Quick journal update - add notes, check off todos, track progress"
+    },
+    {
+      "name": "okr-expert",
+      "description": "OKR best practices advisor based on Wodtke, Klau & Cagan methodologies"
+    }
+  ],
+  "hooks": "hooks/hooks.json",
+  "templates": "templates/",
+  "license": "MIT",
+  "repository": "https://github.com/hendrikhemken/claude-plugin-productivity-kit",
+  "keywords": ["okr", "productivity", "journal", "morning-routine", "weekly-review"]
+}

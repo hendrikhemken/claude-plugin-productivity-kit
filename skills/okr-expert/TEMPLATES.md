@@ -1,0 +1,312 @@
+# OKR Templates
+
+Ready-to-use templates for OKR creation and tracking.
+
+---
+
+## Q{X}-{YYYY}-OKRs.md (Main OKR File)
+
+This is the **main archive** containing all weeks and full OKR details.
+
+**File naming convention:**
+- Q1 (Jan-Mar): `Q1-2026.md`
+- Q2 (Apr-Jun): `Q2-2026.md`
+- Q3 (Jul-Sep): `Q3-2026.md`
+- Q4 (Oct-Dec): `Q4-2026.md`
+
+```markdown
+---
+quarter: Q{X} {YYYY}
+period: [Start Date] - [End Date]
+duration: [X] weeks
+type: company
+owner: [Name]
+approach: Wodtke (Weekly Rhythm) / Klau (Quarterly Grading)
+confidence: X/10
+status: active
+created: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+---
+
+# Q{X} {YYYY} OKRs - [Company Name]
+*[Duration] weeks to [Goal]*
+
+---
+
+## 🎯 OBJECTIVE
+
+**"[Inspirational, time-bound objective]"**
+
+**Why this focus:**
+- [Reason 1]
+- [Reason 2]
+
+**Success means:**
+- [Success criteria 1]
+- [Success criteria 2]
+
+---
+
+## 📊 KEY RESULTS
+
+### KR1: [Title]
+**Target:** [Measurable target]
+
+- **Start:** [Starting value]
+- **Target:** [End value by date]
+- **Confidence:** X/10
+- **Why:** [Why this matters]
+
+**Current:** [X] | Target: [Y]
+
+---
+
+### KR2: [Title]
+**Target:** [Measurable target]
+
+- **Start:** [Starting value]
+- **Target:** [End value by date]
+- **Confidence:** X/10
+- **Why:** [Why this matters]
+
+**Current:** [X] | Target: [Y]
+
+---
+
+### KR3: [Title]
+**Target:** [Measurable target]
+
+- **Start:** [Starting value]
+- **Target:** [End value by date]
+- **Confidence:** X/10
+- **Why:** [Why this matters]
+
+**Current:** [X] | Target: [Y]
+
+---
+
+## 🔄 Weekly Cadence (Wodtke Style)
+
+### Monday Commitments (15 min)
+**"What are we doing THIS WEEK for these OKRs?"**
+
+- Update confidence level (0.0-1.0) for each KR
+- Pick 1-3 concrete actions per KR
+- Write down commitments
+
+### Friday Celebrations (15 min)
+**"What did we accomplish? What did we learn?"**
+
+- Mark wins (even small ones!)
+- Update progress on KRs
+- Learning: What's working? What's not?
+- Adjust next week's approach
+
+**Without weekly cadence → OKRs die!** (Wodtke's #1 Rule)
+
+---
+
+## 📅 Weekly Tracking
+
+### Week 1 ([Date Range])
+
+**Monday Commitments:**
+- [ ] KR1: [concrete action]
+- [ ] KR2: [concrete action]
+- [ ] KR3: [concrete action]
+
+**Confidence Update:**
+- KR1: X/10 → __/10
+- KR2: X/10 → __/10
+- KR3: X/10 → __/10
+
+**Friday Wins & Learning:**
+- 🎉 [Win 1]
+- 📚 [Learning 1]
+
+---
+
+### Week 2 ([Date Range])
+
+[...repeat for all weeks...]
+
+---
+
+## 📈 End-of-Quarter Grading ([End Date])
+
+**Final Scores:**
+- KR1: __.__
+- KR2: __.__
+- KR3: __.__
+
+**Overall Score:** __.__ / 1.0
+
+**Wodtke Grading:**
+- 0.6-0.7 = SUCCESS! 🎉
+- 0.8-1.0 = Too conservative (sandbagging)
+- 0.0-0.4 = Missed (but learned!)
+
+**Retrospective:**
+- What worked?
+- What didn't?
+- What did we learn?
+- What's next for [Next Quarter]?
+
+---
+
+## 🚨 Critical Reminders
+
+### Wodtke's 5 Deadly Mistakes (AVOID!)
+1. ❌ **Set & Forget** → Weekly tracking is NON-NEGOTIABLE!
+2. ❌ **Goal-of-Week Whiplash** → Don't change OKRs mid-quarter!
+3. ❌ **Too Many OKRs** → 1 Objective, 3-5 KRs max!
+4. ❌ **Micromanaging** → Trust yourself, focus on outcomes
+5. ❌ **All at Once** → Start with pilot, iterate!
+
+### Red Team Check
+**Ask yourself weekly:**
+- Can I game these KRs? (If YES → add quality gates!)
+- Can I achieve this without business impact? (If YES → rewrite!)
+- Am I measuring activities or outcomes? (Outcomes only!)
+
+### OKRs ≠ Performance Review
+**Remember:**
+- OKRs = Stretch goals (designed to sometimes fail)
+- Performance = Job expectations (must hit)
+- NEVER conflate them or you'll sandbag immediately!
+
+---
+
+*Full OKR File Template*
+```
+
+---
+
+## CURRENT_WEEK.md (Lightweight Current Week View)
+
+This is the **Single Source of Truth for the current week** - automatically loaded in every session via `@import`.
+
+**Location:** `/projects/business-strategy/okrs/CURRENT_WEEK.md`
+
+**Purpose:**
+- Lightweight view (50 lines vs 300 lines!)
+- Always visible in Claude's context
+- Updated every Monday (commitments) & Friday (wins)
+- Keeps User and Claude aligned on weekly focus
+
+**CRITICAL:** The `quarter:` field in front matter is the **Single Source of Truth** for the active quarter!
+- okr-monday and okr-friday skills read this field to find the main OKR file
+- Example: `quarter: Q1 2026` → Skills will load `Q1-2026-OKRs.md`
+
+```markdown
+---
+week: [number]
+period: [date range]
+quarter: Q{X} {YYYY}
+owner: [Name]
+updated: YYYY-MM-DD
+---
+
+# Current Week OKRs - [Company Name]
+*Week X of Y - QZ 2025*
+
+---
+
+## 🎯 This Week's Commitments
+
+**Focus:** [One-line focus statement for the week]
+
+- [ ] **KR1:** [Concrete action 1]
+- [ ] **KR1:** [Concrete action 2]
+- [ ] **KR2:** [Concrete action 1]
+- [ ] **KR2:** [Concrete action 2]
+- [ ] **KR3:** [Concrete action 1]
+
+---
+
+## 📊 Current Progress
+
+### KR1: [Title]
+**Progress:** [X] / [Y] ([%])
+**Confidence:** X/10 [↑/↓/=] (was Y/10)
+**Status:** [One-line status note - what's happening this week?]
+
+### KR2: [Title]
+**Progress:** [X] / [Y] ([%])
+**Confidence:** X/10 [↑/↓/=] (was Y/10)
+**Status:** [One-line status note]
+
+### KR3: [Title]
+**Progress:** [X] / [Y] ([%])
+**Confidence:** X/10 [↑/↓/=] (was Y/10)
+**Status:** [One-line status note]
+
+---
+
+## 💡 Quick Reference
+
+**Objective:** "[Objective]"
+**Overall Confidence:** X.X/10 (Perfect Wodtke zone!)
+**This Week's North Star:** [What's the ONE thing that matters most?]
+
+---
+
+*Updated every Monday (Commitments) & Friday (Wins/Learning)*
+*Full OKRs: /projects/business-strategy/okrs/Q{X}-{YYYY}.md*
+```
+
+---
+
+## Usage Notes
+
+### Determine Current Quarter
+
+**From current date:**
+- Q1 = January - March
+- Q2 = April - June
+- Q3 = July - September
+- Q4 = October - December
+
+**Example:** If today is January 15, 2026 → Q1-2026.md
+
+### When okr-expert Creates OKRs
+
+**Creates 2 files:**
+1. `/projects/business-strategy/okrs/Q{X}-{YYYY}.md` (main archive, all weeks - e.g., Q1-2026.md)
+2. `/projects/business-strategy/okrs/CURRENT_WEEK.md` (Week 1 initialized)
+
+### When okr-monday Updates (Every Monday)
+
+**Updates 2 files:**
+1. `/projects/business-strategy/okrs/Q{X}-{YYYY}.md` (Week X section)
+2. `/projects/business-strategy/okrs/CURRENT_WEEK.md` (new commitments, move to Week X+1)
+
+### When okr-friday Updates (Every Friday)
+
+**Updates 2 files:**
+1. `/projects/business-strategy/okrs/Q{X}-{YYYY}.md` (mark checkboxes, add wins/learning)
+2. `/projects/business-strategy/okrs/CURRENT_WEEK.md` (mark checkboxes, update progress)
+
+---
+
+## File Relationship
+
+```
+Q{X}-{YYYY}.md (Archive)
+    ↓
+CURRENT_WEEK.md (View)
+    ↓
+Claude's Context (@import in CLAUDE.md)
+    ↓
+Proactive OKR-Awareness in Sessions
+```
+
+**Key Principle:** Single Source of Truth
+- Main data lives in Q{X}-{YYYY}.md (e.g., Q1-2026.md)
+- CURRENT_WEEK.md is a **derived view** (current week only)
+- Both updated in sync by Skills (Monday/Friday)
+
+---
+
+*OKR Templates - Product-Toolkit*
+*Based on Wodtke & Klau Best Practices*
